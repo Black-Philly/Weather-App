@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather</title>
+  </head>
+  <body
+    style="
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(245, 225, 209);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    "
+  >
+    <div
+      id="app"
+      style="
+        background-color: antiquewhite;
+        padding: 25px;
+        border: 15px;
+        box-shadow: 0 0 10px;
+        color: rgb(109, 26, 26);
+        text-align: center;
+        max-width: 300px;
+        width: 100%;
+      "
+    >
+      <h1><strong> My Weather App </strong></h1>
+      <input
+        type="text"
+        placeholder="Enter City"
+        id="cityInput"
+        style="
+          width: 75%;
+          padding: 10px;
+          border: 1px thin white;
+          border-radius: 5px;
+        "
+      />
+      <button
+        id="getWeather"
+        style="
+          margin-top: 20px;
+          padding: 10px 20px;
+          background-color: brown;
+          color: rgb(255, 255, 255);
+          font-size: medium;
+          border: thin;
+          border-radius: 5px;
+          cursor: pointer;
+        "
+      >
+        Show Weather
+      </button>
+
+    </div>
+
+    <div
+    id="weather-container"
+    style="
+      margin: 20px;
+      border: 15px;
+      box-shadow: 0 0 10px;
+      color: rgb(255, 255, 255);
+      background-color: brown;
+      padding: 25px;
+      max-width: 300px;
+      width: 100%;
+      font-size: medium;
+      font-family: Arial, Helvetica, sans-serif;
+    "
+  >
+    <p>Location: <span id="location"></span></p><br>
+    <p>Temperature: <span id="temperature"></span>C</p><br>
+    <p>Description: <span id="description"></span></p><br>
+  </div>
+
+    <script src="index.js"></script>
+
+  </body>
+</html>
